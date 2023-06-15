@@ -1,31 +1,46 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Learn how to install OpenChat and get started with your first chatbot.'
 ---
 
 ## Setup your development
 
-Learn how to update your docs locally and and deploy them to the public.
+### Make sure docker is installed
 
-### Edit and preview
+You can download docker [here](https://www.docker.com/products/docker-desktop) if you don't have it installed already.
+currently OpenChat is only supported on Mac and Linux. Windows support is coming soon.
+
+### Installing
 
 <AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
-  </Accordion>
+    <Accordion icon="github" title="Clone OpenChat locally">
+        Clone the OpenChat repository locally by running the following command in your terminal:
+
+        ```bash
+        git clone https://github.com/openchatai/OpenChat
+        ```
+
+    </Accordion>
+    <Accordion icon="rectangle-terminal" title="Update the environment variables">
+        Update common.env with your keys:
+
+        ```
+        OPENAI_API_KEY=# you can get it from your account in openai.com
+        PINECONE_API_KEY=# you can get from "API Keys" tab in pinecone
+        PINECONE_ENVIRONMENT=# you can get it after creating your index in pinecone
+        PINECONE_INDEX_NAME=# you can get it after creating your index in pinecone
+        ```
+    </Accordion>
+
+    <Accordion icon="rectangle-terminal" title="Run the installation command">
+        Run the following command in your terminal to install OpenChat:
+
+        ```bash
+        make install
+        ```
+
+        This will install all the dependencies and start the server. You can access the server at http://localhost:8000
+    </Accordion>
 </AccordionGroup>
 
 ### Deploy your changes
