@@ -25,10 +25,10 @@
     {
       "group": "Get Started",
       "pages": ["introduction", "quickstart"]
-    },
+    }
   ],
   "footerSocials": {
-    "github": "https://github.com/openchatai/openchat",
+    "github": "https://github.com/openchatai/openchat"
   },
   "backgroundImage": "/background.png"
 }
