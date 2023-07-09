@@ -1,0 +1,20 @@
+---
+title: 'Chat Bubble'
+description: 'Learn how to configure and play with OpenChat\'s chat bubble'
+---
+
+### Options
+
+You can set up the chat bubble on any web page in two simple steps:
+- Place the initialization JS function at the end of the `<body>` tag
+```javascript
+    initializeChatWidget({
+        token: "YOUR_BOT_TOKEN",
+        isFullScreen: true
+    })
+```
+
+- Configure it (optional)
+
+`isFullScreen` (bool) if enabled, the chat bubble will always take the full width and height of it's parent
+`initialMessages` (array) if provided, the chat bubble will be initialized with those messages

@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "OpenChat Docs",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "https://framerusercontent.com/images/xqRbDpD2HGU7bjzVKEaO1DE8498.png",
+    "light": "https://framerusercontent.com/images/xqRbDpD2HGU7bjzVKEaO1DE8498.png"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -24,7 +24,7 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart"]
+      "pages": ["introduction", "quickstart", "chatBubble"]
     }
   ],
   "footerSocials": {
